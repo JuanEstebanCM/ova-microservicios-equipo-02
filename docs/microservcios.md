@@ -15,7 +15,7 @@
 
 ## Detalle por Servicio
 
-### conjuntos-jni
+### conjuntos-jni (OVA Matematicas Discretas)
 - **Responsable:** Cristian Daniel Cardona Correa (@Cristian-Daniel-Cardona-Correa)
 - **Repositorio:** [https://github.com/org/auth-service](https://github.com/Cristian-Daniel-Cardona-Correa/conjuntos-jni)
 - **Base URL (EC2):** http://<ip>:8095
@@ -62,9 +62,10 @@
 | Rol | Nombre | Usuario GitHub | Observaciones |
 |----|--------|----------------|--------------|
 | Scrum Master | Santiago Ospina Gonzalez | @Santiago-Ospina-Gonzalez | coordinación |
-| DevOps | Nombre | @github | puertos y EC2 |
-| QA | Nombre | @github | pruebas |
-| Servicios | Nombre | @github | Indicar servicio asignado |
+| Infraestructura y DevOps | Jhon Alexis Gonzalez Cardenas | @Jhon1Alexis1Gonzalez1Cardenas | puertos y EC2 |
+| Documentacion y Desarrollo | Juan Esteban Castañeda Montaño | @JuanEstebanCM | pruebas |
+| Desarrollo y Front-End | Cristian Daniel Cardona Correa | @Cristian-Daniel-Cardona-Correa | Indicar servicio asignado |
+| Documentacion e Infraestructura | Brahian Andres Tenorio Reina | @github | Indicar servicio asignado |
 
 ---
 
