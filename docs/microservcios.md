@@ -6,7 +6,7 @@
 
 | Servicio (ID)  | Descripción breve | Repo URL | Base URL (EC2) | Swagger UI | Responsable | Estado |
 |----------------|------------------|----------|----------------|------------|-------------|--------|
-| auth-service   | Manejo de login y tokens JWT | https://github.com/org/auth-service | http://<ip>:8081 | http://<ip>:8081/swagger-ui | Nombre Apellido (@github) | En progreso |
+| conjuntos-jni   | Backend OVA Matematicas Discretas | [https://github.com/org/auth-service](https://github.com/Cristian-Daniel-Cardona-Correa/conjuntos-jni) | http://<ip>:8081 | http://<ip>:8081/swagger-ui | Cristian Daniel Cardona Correa (@Cristian-Daniel-Cardona-Correa) | Finalizado |
 | ova-service    | CRUD OVA, módulos, lecciones | https://github.com/org/ova-service | http://<ip>:8082 | http://<ip>:8082/swagger-ui | Nombre Apellido (@github) | En progreso |
 | asset-service  | Gestión de archivos (img/pdf/video-url) | https://github.com/org/asset-service | http://<ip>:8083 | http://<ip>:8083/swagger-ui | Nombre Apellido (@github) | Pendiente |
 | rating-service | Comentarios / calificaciones | https://github.com/org/rating-service | http://<ip>:8084 | http://<ip>:8084/swagger-ui | Nombre Apellido (@github) | Pendiente |
