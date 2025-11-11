@@ -22,14 +22,14 @@
 - **Swagger UI:** http://<ip>:8081/swagger-ui
 - **Entidades principales:**
 - Rest Controller:
-- ConjuntosRestController (Controlador de la API)
-Entidades de peticiones (dto):
-- ConjuntosRequest (DTO que representa la petición para operaciones entre conjuntos)
-- ElementoEnConjuntoRequest (DTO que representa la petición para verificar si un elemento está en un conjunto)
-Service:
-- ConjuntosService (La logica de negocio)
-Carga la libreria:
-- JavaConjuntos (Clase que representa las funciones de la biblioteca dinamica JNI)
+  ConjuntosRestController (Controlador de la API)
+- Entidades de peticiones (dto):
+  ConjuntosRequest (DTO que representa la petición para operaciones entre conjuntos)
+  ElementoEnConjuntoRequest (DTO que representa la petición para verificar si un elemento está en un conjunto)
+- Service:
+  ConjuntosService (La logica de negocio)
+- Carga la libreria:
+  JavaConjuntos (Clase que representa las funciones de la biblioteca dinamica JNI)
 - **Endpoints mínimos:**
   - `POST /api/conjuntos-jni/union`
   - `POST /api/conjuntos-jni/interseccion`
