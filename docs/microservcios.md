@@ -7,8 +7,8 @@
 | Servicio (ID)  | Descripción breve | Repo URL | Base URL (EC2) | Swagger UI | Responsable | Estado |
 |----------------|------------------|----------|----------------|------------|-------------|--------|
 | conjuntos-jni   | Backend OVA Matematicas Discretas | [https://github.com/org/auth-service](https://github.com/Cristian-Daniel-Cardona-Correa/conjuntos-jni) | http://<ip>:8095 | [http://<ip>:8081/swagger-ui](http://localhost:8081/api/conjuntos-jni) | Cristian Daniel Cardona Correa (@Cristian-Daniel-Cardona-Correa) | Finalizado |
-| ova-service    | CRUD OVA, módulos, lecciones | https://github.com/org/ova-service | http://<ip>:8082 | http://<ip>:8082/swagger-ui | Nombre Apellido (@github) | En progreso |
-| asset-service  | Gestión de archivos (img/pdf/video-url) | https://github.com/org/asset-service | http://<ip>:8083 | http://<ip>:8083/swagger-ui | Nombre Apellido (@github) | Pendiente |
+| usuario-service    | Microservicio de usuarios para la lógica del inicio de sesión y guardado en la base de datos | [https://github.com/org/ova-service](https://github.com/Cristian-Daniel-Cardona-Correa/usuario-service) | http://<ip>:8082 | http://<ip>:8082/swagger-ui | Cristian Daniel Cardona Correa (@Cristian-Daniel-Cardona-Correa) | Finalizado |
+| costos-jni  | OVA Costos y Presupuestos |[ https://github.com/org/asset-service](https://github.com/JuanEstebanCM/ovaCostosPresupuestos) | http://<ip>:8094 | http://<ip>:8094/swagger-ui | Juan Esteban Castañeda Montaño (@JuanEstebanCM) | Finalizado |
 | rating-service | Comentarios / calificaciones | https://github.com/org/rating-service | http://<ip>:8084 | http://<ip>:8084/swagger-ui | Nombre Apellido (@github) | Pendiente |
 
 ---
@@ -36,20 +36,31 @@
   - [ ] Swagger operativo
   - [ ] Commits diarios
 
-### ova-service
-- **Responsable:** Nombre Apellido (@github)
-- **Repositorio:** https://github.com/org/ova-service
-- **Entidades principales:** OVA, Módulo, Lección
+### usuario-service
+- **Responsable:** Cristian Daniel Cardona Correa (@Cristian-Daniel-Cardona-Correa)
+- **Repositorio:** [https://github.com/org/ova-service](https://github.com/Cristian-Daniel-Cardona-Correa/usuario-service)
+- **Entidades principales:**
+    - Entidad Usuario (Long id, String nombre, String email, String password) 
 - **Endpoints mínimos:**
-  - `POST /api/ova`
-  - `GET /api/ova`
-  - `GET /api/ova/{id}`
-  - `PUT /api/ova/{id}`
-  - `DELETE /api/ova/{id}`
+  - `GET /api/usuario-service/usuarios`
+  - `GET (Buscar por ID) /api/usuario-service/usuarios/2`
+  - `POST api/usuario-service/usuarios`
+  - `PUT /api/usuario-service/usuarios/4`
+  - `POST /api/usuario-service/login`
+  - `DELETE api/usuario-service/usuarios/4 (Por ID)`
 
-### asset-service
-- **Responsable:** Nombre Apellido (@github)
-- **Repositorio:** https://github.com/org/asset-service
+### costos-jni
+- **Responsable:** Juan Esteban Castañeda Montaño (@JuanEstebanCM)
+- **Repositorio:** [https://github.com/org/asset-service](https://github.com/JuanEstebanCM/ovaCostosPresupuestos)
+- - **Entidades principales:**
+    - Entidad 
+- **Endpoints mínimos:**
+  - `GET`
+  - `GET`
+  - `POST`
+  - `PUT`
+  - `POST`
+  - `DELETE`
 
 ### rating-service
 - **Responsable:** Nombre Apellido (@github)
