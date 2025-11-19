@@ -7,8 +7,8 @@
 | Servicio (ID)  | Descripción breve | Repo URL | Base URL (EC2) | Swagger UI | Responsable | Estado |
 |----------------|------------------|----------|----------------|------------|-------------|--------|
 | conjuntos-jni   | Backend OVA Matematicas Discretas | [https://github.com/org/auth-service](https://github.com/Cristian-Daniel-Cardona-Correa/conjuntos-jni) | http://<ip>:8095 | [http://<ip>:8081/swagger-ui](http://localhost:8081/api/conjuntos-jni) | Cristian Daniel Cardona Correa (@Cristian-Daniel-Cardona-Correa) | Finalizado |
-| usuario-service    | Microservicio de usuarios para la lógica del inicio de sesión y guardado en la base de datos | [https://github.com/org/ova-service](https://github.com/Cristian-Daniel-Cardona-Correa/usuario-service) | http://<ip>:8082 | http://<ip>:8082/swagger-ui | Cristian Daniel Cardona Correa (@Cristian-Daniel-Cardona-Correa) | Finalizado |
-| costos-jni  | OVA Costos y Presupuestos |[ https://github.com/org/asset-service](https://github.com/JuanEstebanCM/ovaCostosPresupuestos) | http://<ip>:8094 | http://<ip>:8094/swagger-ui | Juan Esteban Castañeda Montaño (@JuanEstebanCM) | Finalizado |
+| usuario-service    | Microservicio de usuarios para la lógica del inicio de sesión y guardado en la base de datos | [https://github.com/org/ova-service](https://github.com/Cristian-Daniel-Cardona-Correa/usuario-service) | http://<ip>:8082 | [http://<ip>:8082/swagger-ui](http://localhost:8082/api/usuario-service) | Cristian Daniel Cardona Correa (@Cristian-Daniel-Cardona-Correa) | Finalizado |
+| costos-jni  | OVA Costos y Presupuestos |[ https://github.com/org/asset-service](https://github.com/JuanEstebanCM/ovaCostosPresupuestos) | http://<ip>:8094 | [http://<ip>:8082/swagger-ui](http://localhost:8094/api/costos-jni) | Juan Esteban Castañeda Montaño (@JuanEstebanCM) | Finalizado |
 | rating-service | Comentarios / calificaciones | https://github.com/org/rating-service | http://<ip>:8084 | http://<ip>:8084/swagger-ui | Nombre Apellido (@github) | Pendiente |
 
 ---
