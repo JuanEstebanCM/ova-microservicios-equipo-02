@@ -9,7 +9,7 @@
 | conjuntos-jni   | Backend OVA Matematicas Discretas | [https://github.com/org/auth-service](https://github.com/Cristian-Daniel-Cardona-Correa/conjuntos-jni) | http://<ip>:8095 | [http://<ip>:8081/swagger-ui](http://localhost:8081/api/conjuntos-jni) | Cristian Daniel Cardona Correa (@Cristian-Daniel-Cardona-Correa) | Finalizado |
 | usuario-service    | Microservicio de usuarios para la lógica del inicio de sesión y guardado en la base de datos | [https://github.com/org/ova-service](https://github.com/Cristian-Daniel-Cardona-Correa/usuario-service) | http://<ip>:8082 | [http://<ip>:8082/swagger-ui](http://localhost:8082/api/usuario-service) | Cristian Daniel Cardona Correa (@Cristian-Daniel-Cardona-Correa) | Finalizado |
 | costos-jni  | OVA Costos y Presupuestos |[ https://github.com/org/asset-service](https://github.com/JuanEstebanCM/ovaCostosPresupuestos) | http://<ip>:8094 | [http://<ip>:8082/swagger-ui](http://localhost:8094/api/costos-jni) | Juan Esteban Castañeda Montaño (@JuanEstebanCM) | Finalizado |
-| rating-service | Comentarios / calificaciones | https://github.com/org/rating-service | http://<ip>:8084 | http://<ip>:8084/swagger-ui | Nombre Apellido (@github) | Pendiente |
+| biseccion-service | Microservicio de Analisis Numerico | [https://github.com/org/rating-service](https://github.com/Jhon1Alexis1Gonzalez1Cardenas/biseccion_service) | http://<ip>:9090 | [http://<ip>:9090/swagger-ui ](http://localhost:9090/api/biseccion_service)| Jhon Alexis Gonzalez Cardenas (@Jhon1Alexis1Gonzalez1Cardenas) | Finalizado |
 
 ---
 
@@ -19,7 +19,7 @@
 - **Responsable:** Cristian Daniel Cardona Correa (@Cristian-Daniel-Cardona-Correa)
 - **Repositorio:** [https://github.com/org/auth-service](https://github.com/Cristian-Daniel-Cardona-Correa/conjuntos-jni)
 - **Base URL (EC2):** http://<ip>:8095
-- **Swagger UI:** http://<ip>:8081/swagger-ui
+- **Swagger UI:** [http://<ip>:8081/swagger-ui](http://localhost:8081/api/conjuntos-jni)
 - **Entidades principales:**
     - Rest Controller:   ConjuntosRestController (Controlador de la API)
     - Entidades de peticiones (dto):    ConjuntosRequest (DTO que representa la petición para operaciones entre conjuntos),  ElementoEnConjuntoRequest (DTO que representa la petición para verificar si un elemento está en un conjunto)
@@ -30,15 +30,12 @@
   - `POST /api/conjuntos-jni/interseccion`
   - `POST /api/conjuntos-jni/diferencia`
   - `POST /api/conjuntos-jni/esta-en-conjunto`
-- **Checklist:**
-  - [ ] Compila local
-  - [ ] Health UP
-  - [ ] Swagger operativo
-  - [ ] Commits diarios
 
 ### usuario-service
 - **Responsable:** Cristian Daniel Cardona Correa (@Cristian-Daniel-Cardona-Correa)
 - **Repositorio:** [https://github.com/org/ova-service](https://github.com/Cristian-Daniel-Cardona-Correa/usuario-service)
+- **Base URL (EC2):** http://<ip>:8082
+- **Swagger UI:** [http://<ip>:8082/swagger-ui](http://localhost:8082/api/usuario-service)
 - **Entidades principales:**
     - Entidad Usuario (Long id, String nombre, String email, String password) 
 - **Endpoints mínimos:**
@@ -52,19 +49,25 @@
 ### costos-jni
 - **Responsable:** Juan Esteban Castañeda Montaño (@JuanEstebanCM)
 - **Repositorio:** [https://github.com/org/asset-service](https://github.com/JuanEstebanCM/ovaCostosPresupuestos)
+- **Base URL (EC2):** http://<ip>:8094
+- **Swagger UI:** [http://<ip>:8082/swagger-ui](http://localhost:8094/api/costos-jni)
 - - **Entidades principales:**
-    - Entidad 
+    - Entidad Ovacostos: cfijo, cvariable, cindirecto, unidades, margen, resultado
 - **Endpoints mínimos:**
-  - `GET`
-  - `GET`
-  - `POST`
-  - `PUT`
-  - `POST`
-  - `DELETE`
+  - http://localhost:8094/api/costos-jni/calcular
 
-### rating-service
-- **Responsable:** Nombre Apellido (@github)
-- **Repositorio:** https://github.com/org/rating-service
+### biseccion-service
+- **Responsable:** Jhon Alexis Gonzalez Cardenas (@Jhon1Alexis1Gonzalez1Cardenas)
+- **Repositorio:** [https://github.com/org/rating-service](https://github.com/Jhon1Alexis1Gonzalez1Cardenas/biseccion_service)
+- **Base URL (EC2):** http://<ip>:9090
+- **Swagger UI:** [http://<ip>:9090/swagger-ui ](http://localhost:9090/api/biseccion_service)
+- **Entidades principales:**
+    - Rest Controller:   ConjuntosRestController (Controlador de la API)
+    - Entidades de peticiones (dto):    ConjuntosRequest (DTO que representa la petición para operaciones entre conjuntos),  ElementoEnConjuntoRequest (DTO que representa la petición para verificar si un elemento está en un conjunto)
+    - Service:   ConjuntosService (La logica de negocio)
+    - Carga la libreria:   JavaConjuntos (Clase que representa las funciones de la biblioteca dinamica JNI)
+- **Endpoints mínimos:**
+  - `POST /api/biseccion_service/Evaluar`
 
 ---
 
